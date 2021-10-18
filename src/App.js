@@ -12,7 +12,6 @@ function App() {
       <About />
       <Work />
       <Contact />
-      <ScrollUp />
       <Footer />
     </div>
   );
