@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import {Header, About, Work, Contact, Footer, MobileNav} from './components/index';
+import { useState } from 'react';
 import './App.css';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header isOpen={isOpen} setOpen={setOpen}/>
+      <MobileNav isOpen={isOpen} setOpen={setOpen} />
+      <About />
+      <Work />
+      <Contact />
+      <ScrollUp />
+      <Footer />
     </div>
   );
 }
