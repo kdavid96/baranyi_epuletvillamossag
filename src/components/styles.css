@@ -77,19 +77,8 @@
     font-weight: bold;
 }
 
-.card:nth-child(1){
+.card{
     background-color: #88D136;
-    top: 15px;
-}
-
-.card:nth-child(2){
-    background-color: #88D136;
-    top: -15px;
-}
-
-.card:nth-child(3){
-    background-color: #88D136;
-    top: 30px;
 }
 
 .work-filler{
