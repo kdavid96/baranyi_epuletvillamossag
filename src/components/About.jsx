@@ -7,7 +7,7 @@ export default function About() {
         <div style={{height: '100vh'}} id="about">
         <div className="about" style={{width: '80vw', position: 'relative', left: '10vw'}}>
             <div>
-                <h1 style={{marginTop: '85px'}}>Rólunk</h1><br/>
+                <h1 style={{marginTop: '85px', color: '#88D136'}}>Rólunk</h1><br/>
                 <AboutContainer>
                     {/*<img src="./images/electricity.svg" alt="aboutImage" style={{width: '400px', height: 'auto' }}/>*/}
                     

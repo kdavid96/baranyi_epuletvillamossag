@@ -3,16 +3,27 @@
 }
 
 .bg-dark{
-    background-color: #88D136 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 0 5px grey;
 }
 
 .navbar-brand{
-    color: black !important;
+    color: #88D136 !important;
     font-weight: bold;
+    margin: 0;
 }
 
 .nav-link{
-    color: black !important;
+    color: #88D136 !important;
+}
+
+#navbarScroll{
+    left: 6vw;
+    position: relative;
+}
+
+.container-sm{
+    max-width: 640px !important;
 }
 
 .image{
@@ -36,7 +47,6 @@
 }
 
 .work{
-    background: whitesmoke;
     left: 50%;
     position: relative;
     padding: 20px;
@@ -44,7 +54,6 @@
     color: black;
     width: 85%;
     height: auto;
-    border-radius: 25px;
 }
 
 #work{
@@ -75,10 +84,12 @@
     padding: 25px;
     margin: 2px;
     font-weight: bold;
+    background-color: whitesmoke;
+    border: 0;
 }
 
-.card{
-    background-color: #88D136;
+.card p {
+    font-weight: 400 !important;
 }
 
 .work-filler{
@@ -198,11 +209,15 @@
         left: -8% !important;
     }
 
+    .card {
+        width: 100vw !important;
+    }
+
     .card p {
         width: 100% !important;
     }
 
     p {
-        width: 100vw !important;
+        width: 90vw !important;
     }
 }

@@ -7,8 +7,8 @@ export default function Contact() {
         console.log(e);
     }
     return (
-        <div class="contact" style={{width: '55vw', position: 'relative', left: '22.5vw', marginTop: '55px'}}>
-            <h1 style={{marginBottom: '15px'}} id="contact">Kapcsolat</h1>
+        <div class="contact" style={{width: '75vw', position: 'relative', left: '12.5vw', marginTop: '55px'}}>
+            <h1 style={{marginBottom: '15px', color: '#88D136'}} id="contact">Kapcsolat</h1>
             <Form className="form" style={{position:'relative'}} onSubmit={sendEmail}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Control type="email" placeholder="Email cím" />
@@ -16,7 +16,7 @@ export default function Contact() {
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Control as="textarea" rows={3} placeholder="Üzenet szövege"/>
                 </Form.Group>
-                <Button type="submit" style={{backgroundColor: '#88D136', border: '0'}}>Küldés</Button>
+                <Button type="submit" style={{backgroundColor: '#88D136', border: '0', borderRadius: '35px'}}>Küldés</Button>
             </Form>
         </div>
     )

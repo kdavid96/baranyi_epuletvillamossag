@@ -34,7 +34,8 @@ export const NavbarContainer = styled(Container)`
 export const MobileNavContainer = styled.div`
    height: 60px;
    width: 100vw;
-   background-color: #88D136;
+   background-color: white;
+   box-shadow: 0 0 5px grey;
    color: white;
    display: flex;
    flex-direction: row;

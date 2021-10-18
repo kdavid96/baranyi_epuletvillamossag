@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 import Hamburger from 'hamburger-react'
 import Fade from 'react-reveal/Fade';
 import { NavbarContainer } from './style';
@@ -8,15 +9,15 @@ import './styles.css';
 
 export default function Header({isOpen, setOpen}) {
     return(
-        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '80px', backgroundColor: '#88D136 !important'}}>
-            <NavbarContainer>
+        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '80px', backgroundColor: '#88D136 !important', boxShadow: isOpen ? 'none' : '0 0 5px grey'}}>
+            <NavbarContainer style={{width: '95vw', justifyContent: 'space-evenly'}}>
                 <Fade top>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="#about">
                     Baranyi Épületvillamosság
                     </Navbar.Brand>
                 </Fade>
                 <Fade top>
-                    <p className="phoneNumber" style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold'}}>+36 30 699 11 26</p>
+                    <p className="phoneNumber" style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold', position: 'relative', left: '6vw'}}>+36 30 699 11 26</p>
                 </Fade>
                 <Fade top>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -26,13 +27,17 @@ export default function Header({isOpen, setOpen}) {
                     style={{ maxHeight: '100px'}}
                     navbarScroll
                 >
-                    <Nav.Link href="#about">Rólunk</Nav.Link>
-                    <Nav.Link href="#work">Szolgáltatások</Nav.Link>
-                    <Nav.Link href="#contact">Kapcsolat</Nav.Link>
+                    {/*<Nav.Link href="#about" style={{color: 'white'}}><Button style={{backgroundColor: '#88D136', border: '0', borderRadius: '35px'}}>Rólunk</Button></Nav.Link>
+                    <Nav.Link href="#work" style={{color: 'white'}}><Button style={{backgroundColor: '#88D136', border: '0', borderRadius: '35px'}}>Szolgáltatások</Button></Nav.Link>
+                    <Nav.Link href="#contact" style={{color: 'white'}}><Button style={{backgroundColor: '#88D136', border: '0', borderRadius: '35px'}}>Kapcsolat</Button></Nav.Link>*/}
+                    <Nav.Link href="#about" style={{color: 'white'}}>Rólunk</Nav.Link>
+                    <Nav.Link href="#work" style={{color: 'white'}}>Szolgáltatások</Nav.Link>
+                    <Nav.Link href="#contact" style={{color: 'white'}}>Kapcsolat</Nav.Link>
+
                 </Nav>
                 </Navbar.Collapse>
                 <Fade top>
-                <Hamburger style={{display: 'none'}} toggled={isOpen} toggle={setOpen} color="white"/>
+                <Hamburger style={{display: 'none'}} toggled={isOpen} toggle={setOpen} color="black"/>
                 </Fade>
                 </Fade>
             </NavbarContainer>
