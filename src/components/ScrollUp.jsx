@@ -26,7 +26,7 @@ const ScrollUp = () =>{
   window.addEventListener('scroll', toggleVisible);
   
   return (
-    <Button style={{width: 'auto', left: '93%'}}>
+    <Button style={{width: 'auto', left: '90%'}}>
      <BsFillArrowUpSquareFill onClick={scrollToTop} 
      style={{display: visible ? 'inline' : 'none'}} />
     </Button>

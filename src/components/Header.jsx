@@ -12,18 +12,11 @@ export default function Header({isOpen, setOpen}) {
             <NavbarContainer>
                 <Fade top>
                     <Navbar.Brand href="#home">
-                        <img
-                        alt=""
-                        src="/images/logo.png"
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                        />{' '}
                     Baranyi Épületvillamosság
                     </Navbar.Brand>
                 </Fade>
                 <Fade top>
-                    <p style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold'}}>+36301234567</p>
+                    <p className="phoneNumber" style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold'}}>+36 30 699 11 26</p>
                 </Fade>
                 <Fade top>
                 <Navbar.Toggle aria-controls="navbarScroll" />

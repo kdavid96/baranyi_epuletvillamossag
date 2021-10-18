@@ -7,8 +7,9 @@ export default function Contact() {
         console.log(e);
     }
     return (
-        <div class="contact" style={{width: '55vw', position: 'relative', left: '22.5vw'}}>
-            <h1 style={{marginBottom: '25px'}} id="contact">Kapcsolat</h1>
+        <div class="contact" style={{width: '55vw', position: 'relative', left: '22.5vw', marginTop: '55px'}}>
+            <h1 style={{marginBottom: '15px'}} id="contact">Kapcsolat</h1>
+            <p style={{padding: '0', marginBottom: '15px', color: 'red', fontWeight: 'bold'}}>+36 30 699 11 26</p>
             <Form className="form" style={{position:'relative'}} onSubmit={sendEmail}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Control type="email" placeholder="Email cím" />

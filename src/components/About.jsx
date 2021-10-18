@@ -13,13 +13,13 @@ export default function About() {
                     
                     <div className="text-profile">
                         <p style={{width: '70%'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam velit ducimus libero eveniet doloribus id eligendi architecto, aperiam suscipit ea sequi molestiae quam doloremque, repellat nobis quibusdam accusantium quis?</p>
-                        <img src="./images/profile_pic.png" alt="profile_picture" style={{width: '300px', height: '300px', borderRadius: '50%', border: '4px solid #88D136'}}/>
+                        <img src="./images/logo_official.png" alt="profile_picture" style={{width: '300px', height: '300px', borderRadius: '50%', border: '4px solid #88D136'}}/>
                     </div>
                 </AboutContainer>
             </div>
         </div>
-        <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-            <div style={{width: '400px', height: 'auto', paddingTop: '5%' }} id="svg">
+        <div style={{width: '80vw', position: 'relative', left: '7vw', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+            <div style={{width: '300px', height: 'auto', paddingTop: '5%' }} id="svg">
                             <svg width="322" height="282" viewBox="0 0 322 282" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="electricity 1" clip-path="url(#clip0_2:13)">
                             <g id="surface1">
