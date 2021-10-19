@@ -1,5 +1,5 @@
 import {Header, About, Work, Contact, Footer, MobileNav} from './components/index';
-import { useState } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import './App.css';
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
       <Header isOpen={isOpen} setOpen={setOpen}/>
       <MobileNav isOpen={isOpen} setOpen={setOpen} />
       <About />
-      <Work />
+      {/*<Suspense fallback = {<div>Loading...</div>}>*/}
+        <Work />
+      {/*</Suspense>*/}
       <Contact />
       <Footer />
     </div>

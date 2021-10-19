@@ -8,7 +8,7 @@ export default function MobileNav({isOpen, setOpen}) {
         zIndex: '20'}}>
             <MobileNavContainer>
                 <MobileNavNav>
-                    <Nav.Link style={{color: 'white'}} href="#about" onClick={() => {setOpen(false)}}>Rólam</Nav.Link>
+                    <Nav.Link style={{color: 'white'}} href="#about" onClick={() => {setOpen(false)}}>Rólunk</Nav.Link>
                     <Nav.Link style={{color: 'white'}} href="#work" onClick={() => {setOpen(false)}}>Szolgáltatások</Nav.Link>
                     <Nav.Link style={{color: 'white'}} href="#contact" onClick={() => {setOpen(false)}}>Kapcsolat</Nav.Link>
                 </MobileNavNav>

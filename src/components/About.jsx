@@ -4,7 +4,7 @@ import './styles.css';
 
 export default function About() {
     return (
-        <div style={{height: '100vh'}} id="about">
+        <div style={{height: 'auto'}} id="about">
         <div className="about" style={{width: '80vw', position: 'relative', left: '10vw'}}>
             <div>
                 <h1 style={{marginTop: '85px', color: '#88D136'}}>Rólunk</h1><br/>
