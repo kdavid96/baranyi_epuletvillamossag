@@ -18,7 +18,7 @@ export default function About() {
                 </AboutContainer>
             </div>
         </div>
-        <div style={{width: '80vw', position: 'relative', left: '7vw', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+        <div style={{width: '80vw', position: 'relative', left: '10vw', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
             <div style={{width: '300px', height: 'auto', paddingTop: '5%' }} id="svg">
                             <svg width="322" height="282" viewBox="0 0 322 282" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="electricity 1" clip-path="url(#clip0_2:13)">
