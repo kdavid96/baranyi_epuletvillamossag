@@ -1,15 +1,16 @@
-import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Hamburger from 'hamburger-react'
-import Fade from 'react-reveal/Fade';
-import { NavbarContainer } from './style';
 import './styles.css';
+
+import Fade from 'react-reveal/Fade';
+import Hamburger from 'hamburger-react'
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { NavbarContainer } from './style';
+import React from 'react';
+import { scroll } from 'react-scroll';
 
 export default function Header({isOpen, setOpen}) {
     return(
-        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '80px', backgroundColor: '#88D136 !important', boxShadow: isOpen ? 'none' : '0 0 5px grey'}}>
+        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '80px', backgroundColor: '#88D136 !important', boxShadow: isOpen ? 'none' : '0 0 5px grey', zIndex: '3000'}}>
             <NavbarContainer style={{width: '95vw', justifyContent: 'space-evenly'}}>
                 <Fade top>
                     <Navbar.Brand href="#about">

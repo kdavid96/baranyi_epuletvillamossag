@@ -1,36 +1,16 @@
-import React from 'react';
-import { Fade } from 'react-reveal';
-import { Carousel } from 'react-bootstrap';
 import './styles.css';
+
+import { Carousel } from 'react-bootstrap';
+import { Fade } from 'react-reveal';
+import React from 'react';
 
 export default function Work() {
     return (
-        <div id="work">
+        <div id="work" style={{zIndex: '1000'}}>
+            <div className="title-div"><h1 style={{color: 'white'}}>Szolgáltatásaink</h1></div>
             <div className="work">
-                <h1 style={{color: '#88D136', marginBottom: '55px'}}>Szolgáltatásaink</h1>
-                <div className="cards" style={{height: 'auto'}}>
-                    {window.innerWidth > 999 ?
-                        <>
-                        <Fade top>
-                        <div className="card">
-                            <h1>Card1</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
-                        </div>
-                        </Fade>
-                        <Fade delay={400} bottom>
-                        <div className="card">
-                            <h1>Card2</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
-                        </div>
-                        </Fade>
-                        <Fade delay={800} top>
-                        <div className="card">
-                            <h1>Card3</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
-                        </div>
-                        </Fade>
-                        </>
-                        :
+                <div className="cards-backdrop">
+                    <div className="cards">
                         <>
                         <Fade left>
                         <div className="card">
@@ -50,9 +30,8 @@ export default function Work() {
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
                         </div>
                         </Fade>
-                        </>
-                    }
-                    
+                        </>                    
+                    </div>
                 </div>
             </div>
             <div className="work-filler" style={{width: '80vw', position: 'relative', left: '10vw'}} id="work-filler">
@@ -68,7 +47,7 @@ export default function Work() {
                         <Carousel.Item>
                             <img
                             className="d-block w-100"
-                            src="./images/slides/5.jpg"
+                            src="./images/slides/5.webp"
                             alt="5"
                             />
                             <Carousel.Caption>
@@ -79,7 +58,7 @@ export default function Work() {
                         <Carousel.Item>
                             <img
                             className="d-block w-100"
-                            src="./images/slides/1.jpg"
+                            src="./images/slides/1.webp"
                             alt="1"
                             />
 
@@ -91,7 +70,7 @@ export default function Work() {
                         <Carousel.Item>
                             <img
                             className="d-block w-100"
-                            src="./images/slides/3.jpg"
+                            src="./images/slides/3.webp"
                             alt="3"
                             />
 
