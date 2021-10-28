@@ -31,19 +31,22 @@ export default function Header({isOpen, setOpen}) {
                 </div>
                 </Fade>
                 <Fade top>
-                    <div className="navbarBrandContainer" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <div className="navbarBrandContainer" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                        <img id="logo" src="./images/logo_official.webp" alt="profile_picture" style={{borderRadius: '50%', border: '4px solid #88D136', width: 'min(10vw, 120px, 95vw)', height: 'auto', marginRight: '45px'}}/>
                         <span className="navbarBrand" href="#about">
-                            Baranyi <span style={{color: 'grey'}}>Épületvillamosság</span>
+                            <span style={{color: '#88D136'}}>Baranyi</span> <span style={{color: 'grey'}}>Épületvillamosság<br/>
+                            <span id="phone-small">
+                                <p className="phone-small-p"><a rel="noreferrer" target="_blank" href="tel:+36306991126"style={{textDecoration: 'none', color: 'grey'}}><span style={{position: 'relative', top: '-3px'}}><BsFillTelephoneFill /></span>+36 30 699 11 26</a></p>
+                            </span>
+                            </span>
                         </span>
-                        <img src="./images/logo_official.webp" alt="profile_picture" style={{borderRadius: '50%', border: '4px solid #88D136', width: 'min(10vw, 120px, 95vw)', height: 'auto'}}/>
-                        <span className="navbarBrand">A kecskeméti <span style={{color: '#88D136'}}>villanyszerelő</span></span>
                     </div>
                 </Fade>
                 <Fade top>
                     <div className="contact-info">
-                        <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="tel:+36306991126"style={{textDecoration: 'none', color: '#171717'}}><span style={{position: 'relative', top: '-3px'}}><BsFillTelephoneFill /></span>+36 30 699 11 26</a></p>
-                        <p className="phoneNumber"><a rel="noreferrer" ttarget="_blank" href="email:baranyiepuletvill@gmail.com"style={{textDecoration: 'none', color: '#171717'}}><span style={{position: 'relative', top: '-3px'}}><MdAlternateEmail /></span>baranyiepuletvill@gmail.com</a></p>
-                        <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="https://www.facebook.com/baranyiepuletvill" style={{textDecoration: 'none', color: '#171717'}}><span style={{position: 'relative', top: '-3px'}}><FaFacebook /></span>/baranyiepuletvill</a></p>
+                        <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="tel:+36306991126"style={{textDecoration: 'none', color: 'grey'}}><span style={{position: 'relative', top: '-3px'}}><BsFillTelephoneFill /></span>+36 30 699 11 26</a></p>
+                        <p className="phoneNumber"><a rel="noreferrer" ttarget="_blank" href="mailto:baranyiepuletvill@gmail.com"style={{textDecoration: 'none', color: 'grey'}}><span style={{position: 'relative', top: '-3px'}}><MdAlternateEmail /></span>baranyiepuletvill@gmail.com</a></p>
+                        <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="https://www.facebook.com/baranyiepuletvill" style={{textDecoration: 'none', color: 'grey'}}><span style={{position: 'relative', top: '-3px'}}><FaFacebook /></span>/baranyiepuletvill</a></p>
                     </div>
                 </Fade>
             </NavbarContainer>

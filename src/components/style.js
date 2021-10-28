@@ -49,6 +49,7 @@ export const MobileNavContainer = styled.div`
    align-items: center;
    position: fixed;
    z-index: 1020;
+   min-width: 200px
 `;
 
 export const MobileNavNav = styled.ul`
