@@ -1,5 +1,8 @@
 import './styles.css';
 
+import drawing from '../images/drawing.jpg';
+import lakossagi from '../images/lakossagi.png';
+import ipari from '../images/ipari.jpg';
 import { Carousel } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
 import React from 'react';
@@ -14,7 +17,7 @@ export default function Work() {
                         <>
                         <Fade left>
                         <div className="cardContainer">
-                            <div className="cardIllustration"><img src="./images/lakossagi.png" alt="lakossagi"/></div>
+                            <div className="cardIllustration"><img src={lakossagi} alt="lakossagi"/></div>
                             <div className="card">
                                 <h1>Lakossági villanyszerelés</h1>
                                 <p>
@@ -30,12 +33,12 @@ export default function Work() {
                                 <h1>Ipari villanyszerelés</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
                             </div>
-                            <div className="cardIllustration"><img src="./images/ipari.png" alt="ipari"/></div>
+                            <div className="cardIllustration"><img src={ipari} alt="ipari"/></div>
                         </div>
                         </Fade>
                         <Fade delay={800} left>
                         <div className="cardContainer">
-                            <div className="cardIllustration"><img src={process.env.PUBLIC_URL + '/images/drawing.jpeg'} alt="tervezes"/></div>
+                            <div className="cardIllustration"><img src={drawing} alt="tervezes"/></div>
                             <div className="card">
                                 <h1>Tervezés</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>

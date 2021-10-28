@@ -148,6 +148,14 @@
 .cardIllustration{
     width: 25%;
     height: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardIllustration img{
+    height: auto;
+    width: 100%;
 }
 
 .card{
