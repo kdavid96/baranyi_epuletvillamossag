@@ -14,19 +14,22 @@ export default function Work() {
                         <>
                         <Fade left>
                         <div className="card">
-                            <h1>Card1</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
+                            <h1>Lakossági villanyszerelés</h1>
+                            <p>
+                            Vállaljuk lakossági és ipari létesítmények villanyszerelését illetve riasztó és kamera rendszerek kivitelezését is. Családi házak, panel vagy társasházak teljes körű villanyszerelése. Hibaelhárítás- javítás, régi vezetékek, kábelek, kapcsolók,dugaljak, lámpák, elosztók cseréje, Meglévő elektromos hálózat bővítése, új elektromos hálózat tervezése, kivitelezése. Ingyenes felméréssel és kiszállással, garanciával!
+                            Energiatakarékos, LED-es és zöld rendszerek kivitelezése is!
+                            </p>
                         </div>
                         </Fade>
                         <Fade delay={400} right>
                         <div className="card">
-                            <h1>Card2</h1>
+                            <h1>Ipari villanyszerelés</h1>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
                         </div>
                         </Fade>
                         <Fade delay={800} left>
                         <div className="card">
-                            <h1>Card3</h1>
+                            <h1>Tervezés</h1>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
                         </div>
                         </Fade>

@@ -10,15 +10,16 @@ import { scroll } from 'react-scroll';
 
 export default function Header({isOpen, setOpen}) {
     return(
-        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '80px', backgroundColor: '#88D136 !important', boxShadow: isOpen ? 'none' : '0 0 5px grey', zIndex: '3000'}}>
+        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '160px', backgroundColor: '#88D136 !important', boxShadow: isOpen ? 'none' : '0 0 5px grey', zIndex: '3000'}}>
             <NavbarContainer style={{width: '95vw', justifyContent: 'space-evenly'}}>
                 <Fade top>
+                    <img src="./images/logo_official.webp" alt="profile_picture" style={{borderRadius: '50%', border: '4px solid #88D136', width: 'min(10vw, 120px, 95vw)', height: 'auto'}}/>
                     <Navbar.Brand href="#about">
                     Baranyi Épületvillamosság
                     </Navbar.Brand>
                 </Fade>
                 <Fade top>
-                    <p className="phoneNumber" style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold', position: 'relative', left: '6vw'}}>+36 30 699 11 26</p>
+                    <p className="phoneNumber" style={{padding: '0', margin: '0', color: 'red', fontWeight: 'bold', position: 'relative', left: '6vw'}}><a  style={{textDecoration: 'none', color: 'red'}}href="tel:+36306991126">+36 30 699 11 26</a></p>
                 </Fade>
                 <Fade top>
                 <Navbar.Toggle aria-controls="navbarScroll" />

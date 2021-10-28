@@ -26,7 +26,6 @@ export default function About() {
                         
                         <div className="text-profile">
                             <p style={{width: '70%'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam velit ducimus libero eveniet doloribus id eligendi architecto, aperiam suscipit ea sequi molestiae quam doloremque, repellat nobis quibusdam accusantium quis?</p>
-                            <img src="./images/logo_official.webp" alt="profile_picture" style={{borderRadius: '50%', border: '4px solid #88D136', width: 'min(100vw, 300px, 95vw)', height: 'auto'}}/>
                         </div>
                     </AboutContainer>
                 </div>
