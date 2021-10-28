@@ -13,6 +13,11 @@
     margin: 0;
 }
 
+.navbarBrand{
+    font-weight: 800;
+    text-align: center;
+}
+
 .nav-link{
     color: #88D136 !important;
 }
@@ -29,6 +34,37 @@
     max-width: 400px;
     max-height: auto;
     border-radius: 25px;
+}
+
+.green-button{
+    background: linear-gradient(200.32deg,#86c705 23.46%,#6db300 69.93%);
+    padding: 25px;
+    border-radius: 40px;
+    color: white;
+    width: 45vw;
+    font-size: 2rem;
+}
+
+.navbarBrandContainer{
+    width: 50%;
+}
+
+.contact-info{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.phoneNumber{
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    color: blue;
+    font-weight: bold;
+    position: relative;
 }
 
 .about{
@@ -58,8 +94,6 @@
 .work{
     color: black;
     height: auto;
-    background: rgb(157,217,90);
-    background: linear-gradient(180deg, rgba(157,217,90,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%);
     position: relative;
     z-index: -2000;
 }
@@ -87,12 +121,13 @@
 }
 
 .title-div{
-    background-color: #9DD95A;
     width: 100%;
     padding: 25px;
     color: white;
     z-index: 2000;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .cards{
@@ -102,6 +137,17 @@
     justify-content: center;
     height: auto;
     position: relative;
+}
+
+.cardContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardIllustration{
+    width: 25%;
+    height: auto;
 }
 
 .card{
@@ -116,7 +162,7 @@
     background-color: whitesmoke;
     border: 0 !important;
     border-radius: 25px !important;
-    width: 100% !important;
+    width: 75% !important;
     top: 0 !important;
     padding: 15px !important;
 }
@@ -175,6 +221,13 @@
 
 .hamburger-react{
     display: block;
+}
+
+.hamburger-div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes dorog{

@@ -16,7 +16,7 @@ export default function About() {
                 strength={600}
                 >
                     <div className="overlay">
-                        <h1 style={{color: 'white', fontWeight: '400'}}>Rólunk</h1>
+                        <h1 className="green-button" style={{color: 'white', fontWeight: '400'}}>Rólunk</h1>
                     </div>
             </Parallax>
             <div className="about" style={{width: '80vw', position: 'relative', left: '10vw', marginTop: '25px', height: 'auto', minHeight: '65vh'}}>
@@ -25,7 +25,7 @@ export default function About() {
                         {/*<img src="./images/electricity.svg" alt="aboutImage" style={{width: '400px', height: 'auto' }}/>*/}
                         
                         <div className="text-profile">
-                            <p style={{width: '70%'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam velit ducimus libero eveniet doloribus id eligendi architecto, aperiam suscipit ea sequi molestiae quam doloremque, repellat nobis quibusdam accusantium quis?</p>
+                            <p style={{width: '100%'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam velit ducimus libero eveniet doloribus id eligendi architecto, aperiam suscipit ea sequi molestiae quam doloremque, repellat nobis quibusdam accusantium quis?</p>
                         </div>
                     </AboutContainer>
                 </div>

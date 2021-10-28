@@ -29,30 +29,37 @@ export const AboutContainer = styled.div`
 
 export const NavbarContainer = styled(Container)`
    display: flex;
+   position: relative;
+   left: 0;
+   top: 0;
+   padding: 0;
+   margin: 0;
+   width: 100vw;
+   max-width: 1920px !important;
 `;
 
 export const MobileNavContainer = styled.div`
-   height: 60px;
-   width: 100vw;
+   height: 100vh;
+   width: 25vw;
    background-color: white;
    box-shadow: 0 0 5px grey;
    color: white;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    position: fixed;
    z-index: 1020;
 `;
 
 export const MobileNavNav = styled.ul`
-   width: 100%;
+   height: 74%;
    position: relative;
    padding: 0;
    margin: 0;
    left: 0;
    list-style-type: none;
    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
+   flex-direction: column;
+   justify-content: space-around;
    align-items: center;
 `;

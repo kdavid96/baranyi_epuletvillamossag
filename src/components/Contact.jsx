@@ -9,7 +9,7 @@ export default function Contact() {
     }
     return (
         <>
-        <div className="title-div" style={{marginTop: '25px', backgroundColor: 'white'}}><h1 style={{color: '#88D136', marginBottom: '15px'}} id="contact">Kapcsolat</h1></div>
+        <div className="title-div" style={{marginTop: '25px', backgroundColor: 'white'}}><h1 style={{marginBottom: '15px'}} className="green-button" id="contact">Kapcsolat</h1></div>
         <div class="contact" style={{width: '75vw', position: 'relative', left: '12.5vw', marginTop: '55px'}}>
             <Form className="form" style={{position:'relative'}} onSubmit={sendEmail}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
