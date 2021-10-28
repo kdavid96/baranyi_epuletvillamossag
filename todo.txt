@@ -1,2 +1,7 @@
 villám vissza.
 kozossegi oldal gombok
+navbar gepen oldalrol ne legyen feher az egesz, menupontok egymas alatt, buborék menu oldalrol
+contactokhoz kerek facebook gombok
+likejel és mellé a szám
+headingek zold gombos megoldas
+kártyák mellé ikonok

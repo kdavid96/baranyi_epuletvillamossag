@@ -18,7 +18,6 @@
 }
 
 #navbarScroll{
-    left: 6vw;
     position: relative;
 }
 
@@ -175,7 +174,7 @@
 }
 
 .hamburger-react{
-    display: none;
+    display: block;
 }
 
 @keyframes dorog{
@@ -244,11 +243,6 @@
     .navBar {
         display: none;
     }
-
-    .hamburger-react {
-        display: block;
-    }
-
     
     .cards-backdrop{
         width: 100vw !important;
