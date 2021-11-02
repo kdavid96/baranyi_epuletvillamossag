@@ -16,3 +16,7 @@ body {
   font-weight: 300 !important;
   overflow-x: hidden !important;
 }
+
+#root{
+  overflow-x: hidden !important;
+}

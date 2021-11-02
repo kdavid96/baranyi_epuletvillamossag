@@ -3,7 +3,6 @@ import './styles.css';
 import drawing from '../images/drawing.jpg';
 import lakossagi from '../images/lakossagi.png';
 import ipari from '../images/ipari.jpg';
-import { Carousel } from 'react-bootstrap';
 import { Fade } from 'react-reveal';
 import React, {useState} from 'react';
 
@@ -23,6 +22,18 @@ export default function Work() {
             img: drawing,
             text: 'Tervezés'
         }];
+
+    const setSelectedLink = (e) => {
+        document.getElementById("lakossagivillanyszereles").className = "referenceLink";
+        document.getElementById("iparivillanyszereles").className = "referenceLink";
+        document.getElementById("tervezes").className = "referenceLink";
+        document.getElementById(e.target.id).className = document.getElementById(e.target.id).className + " active";
+    }
+
+    const superFunction = (img, e) => {
+        setImgSrc(img);
+        setSelectedLink(e);
+    }
     return (
         <div id="work" style={{zIndex: '1000'}}>
             <div className="title-div"><h1 className="green-button">Szolgáltatásaink</h1></div>
@@ -104,10 +115,13 @@ export default function Work() {
             </div>
             <div className="work-filler" style={{width: '80vw', position: 'relative', left: '10vw'}} id="work-filler">
                 <h1 className="green-button" style={{marginBottom: '50px'}}>Korábbi munkáink</h1>
-                <div className="work-flex" style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between',width: '75vw'}}>
-                    <p style={{width: '35vw', textAlign: 'center', display: 'flex', alignItems: 'center'}}>
-                        <ol>
-                            { imageArray.map(item => <li class="referenceLink" onClick={()=>setImgSrc(item.img)}>{item.text}</li>) }
+                <div className="work-flex" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', width: '85vw'}}>
+                    <p style={{width: '85vw', textAlign: 'center', display: 'flex', alignItems: 'center'}}>
+                        <ol className="work-list">
+                            { imageArray.map(item => item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e") == "iparivillanyszereles" ? 
+                            <li id={item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e")} class="referenceLink active" onClick={(e)=>superFunction(item.img, e)}>{item.text}</li>
+                            :
+                            <li id={item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e")} class="referenceLink" onClick={(e)=>superFunction(item.img, e)}>{item.text}</li>) }
                         </ol>
                     </p>
                     {/*<Carousel style={{maxHeight: '55vh', minHeight: '630px'}}>
