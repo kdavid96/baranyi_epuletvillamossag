@@ -53,11 +53,12 @@ export const MobileNavContainer = styled.div`
 `;
 
 export const MobileNavNav = styled.ul`
-   height: 74%;
+   height: 75%;
    position: relative;
    padding: 0;
    margin: 0;
    left: 0;
+   top: 25%;
    list-style-type: none;
    display: flex;
    flex-direction: column;

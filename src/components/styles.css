@@ -156,8 +156,8 @@
 }
 
 .referenceImg{
-    width: 75vw;
-    height: 35vw;
+    width: 55vw;
+    height: 30vw;
     border-radius: 24px;
 }
 
@@ -267,12 +267,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 3px solid #86c705;
     padding-inline: 25px;
+    box-shadow: -3px 16px 25px 0px gray;
+    border-radius: 25px;
 }
 
 .work-list li{
-    width: 33%;
+    width: 25%;
+    font-size: 1.8rem;
 }
 
 .footer{
@@ -325,6 +327,11 @@
     .aboutText{
         margin-top: 25px;
         width: 85vw !important;
+    }
+
+    .referenceImg{
+        width: 75vw;
+        height: 35vw;
     }
 }
 
@@ -450,5 +457,15 @@
     #phone-small{
         display: block;
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .work-list{
+        flex-direction: column;
+    }
+    .work-list li{
+        width: 75%;
+        margin: 5px;
     }
 }
