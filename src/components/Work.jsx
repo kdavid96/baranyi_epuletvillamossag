@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal';
 import React, {useState} from 'react';
 
 export default function Work() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth] = useState(window.innerWidth);
     const [imgSrc, setImgSrc] = useState(ipari);
     const imageArray = [
         {
@@ -116,9 +116,9 @@ export default function Work() {
             <div className="work-filler" style={{width: '80vw', position: 'relative', left: '10vw'}} id="work-filler">
                 <h1 className="green-button" style={{marginBottom: '50px'}}>Korábbi munkáink</h1>
                 <div className="work-flex" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', width: '85vw'}}>
-                    <p style={{width: '85vw', textAlign: 'center', display: 'flex', alignItems: 'center'}}>
+                    <p style={{width: '80vw', textAlign: 'center', display: 'flex', alignItems: 'center'}}>
                         <ol className="work-list">
-                            { imageArray.map(item => item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e") == "iparivillanyszereles" ? 
+                            { imageArray.map(item => item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e") === "iparivillanyszereles" ? 
                             <li id={item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e")} class="referenceLink active" onClick={(e)=>superFunction(item.img, e)}>{item.text}</li>
                             :
                             <li id={item.text.toLowerCase().replace(" ", "").replace("á", "a").replace("é", "e")} class="referenceLink" onClick={(e)=>superFunction(item.img, e)}>{item.text}</li>) }
@@ -161,7 +161,7 @@ export default function Work() {
                             </Carousel.Caption>
                         </Carousel.Item>
                 </Carousel>*/}
-                <img class="referenceImg" src={imgSrc} alt="image" />
+                <img class="referenceImg" src={imgSrc} alt="Our work" />
                 </div>
             </div>
         </div>

@@ -52,6 +52,7 @@
 
 .navbarBrandContainer{
     width: 85%;
+    padding-left: 75px;
 }
 
 .contact-info{
@@ -75,7 +76,6 @@
 }
 
 .phone-small-p{
-    width: 90%;
     padding: 0;
     margin: 0;
     font-weight: bold;
@@ -116,8 +116,8 @@
 .cards-backdrop{
     padding: 20px;
     background-color: white;
-    width: 85%;
-    left: 7.5%;
+    width: 80%;
+    left: 10%;
     position: relative;
     border-radius: 25px;
     box-shadow: -3px 16px 25px 0px gray;
@@ -145,14 +145,15 @@
     background: linear-gradient(200.32deg,#86c705 23.46%,#6db300 69.93%);
     background:  no-repeat 0 100%;
     background-image: linear-gradient(200.32deg,#86c705 23.46%,#6db300 69.93%);
-    background-size: 0% 4px;
-    transition: background-size .3s ease;
+    background-size: 0% 0;
+    border-radius: 25px;
+    transition: background-size .3s ease-in-out, border-radius .3s ease-in-out, color .2s ease-in-out;
 }
 
 .active{
-    color: rgba(0, 0, 0, 0.88);
+    color: white;
     transition: background-size .2s ease-in-out, color .2s ease-in-out;
-    background-size: 100% 4px;
+    background-size: 100% 100%;
 }
 
 .referenceImg{
@@ -274,7 +275,7 @@
 
 .work-list li{
     width: 25%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .footer{
@@ -296,10 +297,17 @@
 }
 
 .hamburger-div{
-    width: 10%;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    left: min(5%, 50px, 25vw);
+    top: 80%;
+    z-index: 3000;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(200.32deg,#86c705 23.46%,#6db300 69.93%);
+    border-radius: 50%;
 }
 
 @keyframes dorog{
@@ -407,6 +415,10 @@
 @media screen and (max-width: 600px) {
     .navBar {
         display: none;
+    }
+
+    .navbarBrandContainer{
+        width: 100%;
     }
 
     .cards-backdrop{

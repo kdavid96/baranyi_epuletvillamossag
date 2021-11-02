@@ -1,6 +1,6 @@
 import './App.css';
 
-import {About, Contact, Footer, Header, MobileNav, Work} from './components/index';
+import {About, Contact, Footer, Header, MobileNav, Work, FloatingHamburger} from './components/index';
 
 import { useState } from 'react';
 
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Header isOpen={isOpen} setOpen={setOpen}/>
       <MobileNav isOpen={isOpen} setOpen={setOpen} />
+      <FloatingHamburger isOpen={isOpen} setOpen={setOpen} />
       <About />
       <Work />
       <Contact />

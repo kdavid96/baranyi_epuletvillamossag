@@ -4,7 +4,6 @@ import { FaFacebook } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md'
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import Fade from 'react-reveal/Fade';
-import Hamburger from 'hamburger-react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavbarContainer } from './style';
@@ -24,14 +23,14 @@ export default function Header({isOpen, setOpen}) {
                 >
                 </Nav>
                 </Navbar.Collapse>
-                <div className="hamburger-div">
+                {/* <div className="hamburger-div">
                 <Fade top>
                     <Hamburger style={{display: 'none'}} toggled={isOpen} toggle={setOpen} color="black"/>
                 </Fade>
-                </div>
+                </div> */}
                 </Fade>
                 <Fade top>
-                    <div className="navbarBrandContainer" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                    <div className="navbarBrandContainer" style={{display: 'flex', flexDirection: 'row', justifyContent: 'start', alignItems: 'center'}}>
                         <a href="#about"><img id="logo" src="./images/logo_official.webp" alt="profile_picture" style={{borderRadius: '50%', border: '4px solid #88D136', width: 'min(10vw, 120px, 95vw)', height: 'auto', marginRight: '45px'}}/></a>
                         <span className="navbarBrand" href="#about">
                             <span style={{color: '#88D136'}}>Baranyi</span> <span style={{color: 'grey'}}>Épületvillamosság<br/>

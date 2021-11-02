@@ -40,7 +40,7 @@ export const NavbarContainer = styled(Container)`
 
 export const MobileNavContainer = styled.div`
    height: 100vh;
-   width: 25vw;
+   width: 15vw;
    background-color: white;
    box-shadow: 0 0 5px grey;
    color: white;
@@ -53,7 +53,7 @@ export const MobileNavContainer = styled.div`
 `;
 
 export const MobileNavNav = styled.ul`
-   height: 75%;
+   height: 50%;
    position: relative;
    padding: 0;
    margin: 0;
@@ -63,5 +63,5 @@ export const MobileNavNav = styled.ul`
    display: flex;
    flex-direction: column;
    justify-content: space-around;
-   align-items: center;
+   align-items: start;
 `;

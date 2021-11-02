@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div style={{height: 'auto', paddingBottom: '25px', backgroundColor: 'white', zIndex: '2000', position: 'relative', top: '160px'}} id="about">
+        <div style={{height: 'auto', paddingBottom: '25px', backgroundColor: 'white', zIndex: '2000', position: 'relative', top: '110px'}} id="about">
             <Parallax
                 className="custom-class"
                 y={[-20, 20]}
