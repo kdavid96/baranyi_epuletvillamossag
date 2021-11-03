@@ -403,6 +403,7 @@
 
     .navbarBrandContainer{
         padding: 0;
+        justify-content: center !important;
     }
 
 }
@@ -415,6 +416,10 @@
     .referenceImg{
         width: 90vw;
         height: 90vw;
+    }
+
+    .navbar{
+        min-height: 110px !important;
     }
 }
 
@@ -487,8 +492,11 @@
         margin: 5px;
     }
 
-    .navbarBrandContainer{
-        position: relative;
-        left: 20%;
+    .mobileNavContainer{
+        width: 100vw !important;
+    }
+
+    .nav-link{
+        font-size: 3rem !important;
     }
 }

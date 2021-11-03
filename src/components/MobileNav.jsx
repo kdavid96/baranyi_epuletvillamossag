@@ -7,7 +7,7 @@ export default function MobileNav({isOpen, setOpen}) {
     return (
         <div className="mobileNavAnim" style={{transform: isOpen ? 'translate(0)' : 'translate(-100vw)', position: isOpen ? 'fixed' : 'relative',
         zIndex: '2001'}}>
-            <MobileNavContainer>
+            <MobileNavContainer className="mobileNavContainer">
                 <MobileNavNav>
                     <Nav.Link style={{color: 'white', fontWeight: '800', fontSize: '1.5rem'}} href="#about" onClick={() => {setOpen(false)}}>Rólunk</Nav.Link>
                     <Nav.Link style={{color: 'white', fontWeight: '800', fontSize: '1.5rem'}} href="#work" onClick={() => {setOpen(false)}}>Szolgáltatások</Nav.Link>
