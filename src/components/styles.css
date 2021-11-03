@@ -80,6 +80,7 @@
     margin: 0;
     font-weight: bold;
     position: relative;
+    width: 100% !important;
 }
 
 .about{
@@ -300,7 +301,7 @@
     width: 75px;
     height: 75px;
     position: fixed;
-    left: min(5%, 50px, 25vw);
+    right: min(5%, 50px, 25vw);
     top: 80%;
     z-index: 3000;
     display: flex;
@@ -399,6 +400,11 @@
     #logo{
         display: none;
     }
+
+    .navbarBrandContainer{
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px){
@@ -479,5 +485,10 @@
     .work-list li{
         width: 75%;
         margin: 5px;
+    }
+
+    .navbarBrandContainer{
+        position: relative;
+        left: 20%;
     }
 }
