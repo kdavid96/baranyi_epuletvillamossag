@@ -13,7 +13,7 @@ import React from 'react';
 
 export default function Header({isOpen, setOpen}) {    
     return(
-        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '160px', boxShadow: '0 0 5px grey', zIndex: '3000', position: 'fixed'}}>
+        <Navbar sticky="top" bg="dark" variant="dark" style={{minHeight: '160px', boxShadow: '0 0 5px grey', zIndex: '3000', position: 'fixed', width: '100%'}}>
             <NavbarContainer>
                 <Fade top>
                 <Navbar.Toggle aria-controls="navbarScroll" />

@@ -45,7 +45,7 @@ export default function Contact() {
                 </Form.Group>
                 <div style={{position: 'relative', display: 'flex', justifyContent: 'center', marginBottom: '25px'}}>
                     <Recaptcha
-                    sitekey="0x3eeCfD2aF11dfD866c6Eba53E147dfCfD50475E2"
+                    sitekey="000a271c-3be2-4afc-aa28-ec2ed8de02ef"
                     render="explicit"
                     verifyCallback={verifyCaptcha}
                     onloadCallback={sendEmailCaptcha}
