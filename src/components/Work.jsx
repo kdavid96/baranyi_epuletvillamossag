@@ -48,8 +48,16 @@ export default function Work() {
                                     <div className="card">
                                         <h1>Lakossági villanyszerelés</h1>
                                         <p>
-                                        Vállaljuk lakossági és ipari létesítmények villanyszerelését illetve riasztó és kamera rendszerek kivitelezését is. Családi házak, panel vagy társasházak teljes körű villanyszerelése. Hibaelhárítás- javítás, régi vezetékek, kábelek, kapcsolók,dugaljak, lámpák, elosztók cseréje, Meglévő elektromos hálózat bővítése, új elektromos hálózat tervezése, kivitelezése. Ingyenes felméréssel és kiszállással, garanciával!
-                                        Energiatakarékos, LED-es és zöld rendszerek kivitelezése is!
+                                        • Hibakeresés, hibaelhárítás
+                                        • Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét
+                                        • Új lakó ingatlanok villamos hálózatának tervezését
+                                        • Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését
+                                        • Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését
+                                        • Világítás korszerűsítést, design világítás azaz LED technológiára való átállást
+                                        • Infrafilm és fűtőkábeles elektromos fűtés kivitelezését
+                                        • Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)
+                                        • Kapunyitó motorok beüzemelését
+                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)
                                         </p>
                                     </div>
                                     <div className="cardIllustration"><img src={lakossagi} alt="lakossagi"/></div>
@@ -59,7 +67,15 @@ export default function Work() {
                                 <div className="cardContainer">
                                     <div className="card">
                                         <h1>Ipari villanyszerelés</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
+                                        <p>
+                                        • Hibakeresés, hibaelhárítás<br/>
+                                        • Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését<br/>
+                                        • Új ipari létesítmények villamos hálózatának tervezését és kivitelezését<br/>
+                                        • Világítás korszerűsítést azaz LED technológiára való átállást<br/>
+                                        • Üzemi gépek beüzemelését<br/>
+                                        • Ipari elosztó szekrényeket<br/>
+                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
+                                        </p>
                                     </div>
                                     <div className="cardIllustration"><img src={ipari} alt="ipari"/></div>
                                 </div>
@@ -82,8 +98,16 @@ export default function Work() {
                                     <div className="card">
                                         <h1>Lakossági villanyszerelés</h1>
                                         <p>
-                                        Vállaljuk lakossági és ipari létesítmények villanyszerelését illetve riasztó és kamera rendszerek kivitelezését is. Családi házak, panel vagy társasházak teljes körű villanyszerelése. Hibaelhárítás- javítás, régi vezetékek, kábelek, kapcsolók,dugaljak, lámpák, elosztók cseréje, Meglévő elektromos hálózat bővítése, új elektromos hálózat tervezése, kivitelezése. Ingyenes felméréssel és kiszállással, garanciával!
-                                        Energiatakarékos, LED-es és zöld rendszerek kivitelezése is!
+                                        • Hibakeresés, hibaelhárítás<br/>
+                                        • Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét<br/>
+                                        • Új lakó ingatlanok villamos hálózatának tervezését<br/>
+                                        • Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését<br/>
+                                        • Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését<br/>
+                                        • Világítás korszerűsítést, design világítás azaz LED technológiára való átállást<br/>
+                                        • Infrafilm és fűtőkábeles elektromos fűtés kivitelezését<br/>
+                                        • Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)<br/>
+                                        • Kapunyitó motorok beüzemelését<br/>
+                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
                                         </p>
                                     </div>
                                 </div>
@@ -92,7 +116,15 @@ export default function Work() {
                                 <div className="cardContainer">
                                     <div className="card">
                                         <h1>Ipari villanyszerelés</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
+                                        <p>
+                                        • Hibakeresés, hibaelhárítás<br/>
+                                        • Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését<br/>
+                                        • Új ipari létesítmények villamos hálózatának tervezését és kivitelezését<br/>
+                                        • Világítás korszerűsítést azaz LED technológiára való átállást<br/>
+                                        • Üzemi gépek beüzemelését<br/>
+                                        • Ipari elosztó szekrényeket<br/>
+                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
+                                        </p>
                                     </div>
                                     <div className="cardIllustration"><img src={ipari} alt="ipari"/></div>
                                 </div>

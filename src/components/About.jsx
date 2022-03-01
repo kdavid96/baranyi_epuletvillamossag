@@ -25,7 +25,11 @@ export default function About() {
                         {/*<img src="./images/electricity.svg" alt="aboutImage" style={{width: '400px', height: 'auto' }}/>*/}
                         
                         <div className="text-profile">
-                            <p style={{width: '100%'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nam velit ducimus libero eveniet doloribus id eligendi architecto, aperiam suscipit ea sequi molestiae quam doloremque, repellat nobis quibusdam accusantium quis?</p>
+                            <p style={{width: '100%'}}>
+                            Vállalkozásunk 2006 óta szolgálja ki mind a lakossági, mind az ipari felhasználók igényeit villanyszerelés, gyenge áramú rendszerek, okosotthon, automatizálás tevékenységeiben. Tervezéstől a kivitelezésig egyaránt. Vezetünk e-naplót és rendelkezünk kivitelezői felelősség biztosítással.
+                            Többnyire Kecskemét és környékén vállalunk munkát, de megrendelőink kívánságát figyelembe véve Kecskemét - Budapest – Székesfehérvár útvonalon tudunk hatékonyan dolgozni. Megrendelőinknek az anyagrendelést és anyagmozgatást is tudjuk biztosítani igény szerint, amellett, hogy már a tervezés fázisában különböző ötletekkel látjuk el ügyfeleinket. Gondolok itt egy ledes design világítás kialakításában.
+                            Eddigi munkáink között felújítások és új elektromos hálózatok kivitelezése is megtalálható, mint családiházak, társasházi lakások, okosotthonok, komplett lakópark, műhelyek, irodák, raktárak, horgásztavak, látvány világítások. 
+                            </p>
                         </div>
                     </AboutContainer>
                 </div>
