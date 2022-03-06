@@ -15,10 +15,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <div id="fb-root"></div>
-    <title>Baranyi Épületvillamosság</title>
+    <title>Baranyi Épületvillamosság - Villanyszerelés okosan</title>
   </head>
   <body>
+    <script async defer crossorigin="anonymous" 
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
+          &version={v13.0}
+          &appId={1134536467368844}
+          &autoLogAppEvents=1" 
+      nonce="FOKrbAYI">
+  </script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '1134536467368844',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="fb-root"></div>
     <div id="root"></div>
   </body>
 </html>

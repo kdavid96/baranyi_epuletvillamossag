@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+{/*@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');*/}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap');
 
 html{
   scroll-behavior: smooth;
@@ -6,7 +7,7 @@ html{
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Cabin', 'Roboto', sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Roboto', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white !important;

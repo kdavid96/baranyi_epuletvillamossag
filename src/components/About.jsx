@@ -1,12 +1,15 @@
 import './styles.css';
 
+import { MdEmail } from 'react-icons/md';
+import { FaFacebook } from 'react-icons/fa';
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import { AboutContainer } from './style';
 import { Parallax } from 'react-parallax';
 import React from 'react';
 
-export default function About() {
+export default function About({isScrolled, setScrolled}) {
     return (
-        <div style={{height: 'auto', paddingBottom: '25px', backgroundColor: 'white', zIndex: '2000', position: 'relative', top: '110px'}} id="about">
+        <div style={{height: 'auto', backgroundColor: 'white', zIndex: '2000', position: 'relative', top: '110px'}} id="about">
             <Parallax
                 className="custom-class"
                 y={[-20, 20]}
@@ -15,17 +18,24 @@ export default function About() {
                 style={{width: '100%', minHeight: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}
                 strength={600}
                 >
-                    <div className="overlay">
-                        <h1 className="green-button" style={{color: 'white', fontWeight: '400'}}>Rólunk</h1>
+                    <div className="overlay" id="parallax">
+                    <div className={isScrolled ? 'contact-info hide' : 'contact-info'} id="contact-info">
+                            <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="tel:+36306991126"style={{textDecoration: 'none'}}><span style={{position: 'relative', top: '-3px'}}><BsFillTelephoneFill /></span>+36 30 699 11 26</a></p>
+                            <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="mailto:baranyiepuletvill@gmail.com"style={{textDecoration: 'none'}}><span style={{position: 'relative', top: '-3px'}}><MdEmail /></span>baranyiepuletvill@gmail.com</a></p>
+                            <p className="phoneNumber"><a rel="noreferrer" target="_blank" href="https://www.facebook.com/baranyiepuletvill" style={{textDecoration: 'none'}}><span style={{position: 'relative', top: '-3px'}}><FaFacebook /></span>/baranyiepuletvill</a></p>
+                            <div class="fb-like" data-href="https://www.facebook.com/baranyiepuletvill/" data-width="" data-layout="box_count" data-action="like" data-size="small" data-share="false"></div>
+                            <iframe title="like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbaranyiepuletvill%2F&width=62&layout=box_count&action=like&size=small&share=false&height=65&appId=1134536467368844" width="62" height="65" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
                     </div>
             </Parallax>
-            <div className="about" style={{width: '80vw', position: 'relative', left: '10vw', marginTop: '25px', height: 'auto', minHeight: '65vh'}}>
+            <div className="about" style={{width: '80vw', position: 'relative', left: '10vw', height: 'auto', minHeight: '65vh'}}>
+                <h1 className="green-button" style={{color: 'white', fontWeight: '400'}}>Rólunk</h1>
                 <div>
                     <AboutContainer>
                         {/*<img src="./images/electricity.svg" alt="aboutImage" style={{width: '400px', height: 'auto' }}/>*/}
                         
                         <div className="text-profile">
-                            <p style={{width: '100%'}}>
+                            <p style={{width: '100%', marginBottom: '10rem'}}>
                             Vállalkozásunk 2006 óta szolgálja ki mind a lakossági, mind az ipari felhasználók igényeit villanyszerelés, gyenge áramú rendszerek, okosotthon, automatizálás tevékenységeiben. Tervezéstől a kivitelezésig egyaránt. Vezetünk e-naplót és rendelkezünk kivitelezői felelősség biztosítással.
                             Többnyire Kecskemét és környékén vállalunk munkát, de megrendelőink kívánságát figyelembe véve Kecskemét - Budapest – Székesfehérvár útvonalon tudunk hatékonyan dolgozni. Megrendelőinknek az anyagrendelést és anyagmozgatást is tudjuk biztosítani igény szerint, amellett, hogy már a tervezés fázisában különböző ötletekkel látjuk el ügyfeleinket. Gondolok itt egy ledes design világítás kialakításában.
                             Eddigi munkáink között felújítások és új elektromos hálózatok kivitelezése is megtalálható, mint családiházak, társasházi lakások, okosotthonok, komplett lakópark, műhelyek, irodák, raktárak, horgásztavak, látvány világítások. 

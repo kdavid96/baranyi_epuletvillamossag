@@ -43,93 +43,84 @@ export default function Work() {
                     {
                         windowWidth < 1000 ? (
                             <>
-                                <Fade left>
                                 <div className="cardContainer">
                                     <div className="card">
-                                        <h1>Lakossági villanyszerelés</h1>
-                                        <p>
-                                        • Hibakeresés, hibaelhárítás
-                                        • Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét
-                                        • Új lakó ingatlanok villamos hálózatának tervezését
-                                        • Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését
-                                        • Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését
-                                        • Világítás korszerűsítést, design világítás azaz LED technológiára való átállást
-                                        • Infrafilm és fűtőkábeles elektromos fűtés kivitelezését
-                                        • Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)
-                                        • Kapunyitó motorok beüzemelését
-                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)
-                                        </p>
+                                        <Fade bottom>
+                                            <h1>Lakossági villanyszerelés</h1>
+                                        </Fade>
+                                        <Fade bottom delay={400}><p>• Hibakeresés, hibaelhárítás</p><br/></Fade>
+                                        <Fade bottom delay={410}><p>• Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét</p><br/></Fade>    
+                                        <Fade bottom delay={420}><p>• Új lakó ingatlanok villamos hálózatának tervezését</p><br/></Fade>    
+                                        <Fade bottom delay={430}><p>• Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={440}><p>• Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={450}><p>• Világítás korszerűsítést, design világítás azaz LED technológiára való átállást</p><br/></Fade>    
+                                        <Fade bottom delay={460}><p>• Infrafilm és fűtőkábeles elektromos fűtés kivitelezését</p><br/></Fade>   
+                                        <Fade bottom delay={470}><p>• Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)</p><br/></Fade>   
+                                        <Fade bottom delay={480}><p>• Kapunyitó motorok beüzemelését</p><br/></Fade>   
+                                        <Fade bottom delay={490}><p>• Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)</p><br/></Fade>
                                     </div>
                                     <div className="cardIllustration"><img src={lakossagi} alt="lakossagi"/></div>
                                 </div>
-                                </Fade>
-                                <Fade delay={400} right>
                                 <div className="cardContainer">
                                     <div className="card">
-                                        <h1>Ipari villanyszerelés</h1>
-                                        <p>
-                                        • Hibakeresés, hibaelhárítás<br/>
-                                        • Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését<br/>
-                                        • Új ipari létesítmények villamos hálózatának tervezését és kivitelezését<br/>
-                                        • Világítás korszerűsítést azaz LED technológiára való átállást<br/>
-                                        • Üzemi gépek beüzemelését<br/>
-                                        • Ipari elosztó szekrényeket<br/>
-                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
-                                        </p>
+                                        <Fade bottom>
+                                            <h1>Ipari villanyszerelés</h1>
+                                        </Fade>
+                                        <Fade bottom delay={400}><p>• Hibakeresés, hibaelhárítás</p><br/></Fade>
+                                        <Fade bottom delay={410}><p>• Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését</p><br/></Fade>    
+                                        <Fade bottom delay={420}><p>• Új ipari létesítmények villamos hálózatának tervezését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={460}><p>• Világítás korszerűsítést azaz LED technológiára való átállást</p><br/></Fade>   
+                                        <Fade bottom delay={470}><p>• Üzemi gépek beüzemelését</p><br/></Fade>   
+                                        <Fade bottom delay={480}><p>• Ipari elosztó szekrényeket</p><br/></Fade>   
+                                        <Fade bottom delay={490}><p>• Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)</p><br/></Fade>
                                     </div>
                                     <div className="cardIllustration"><img src={ipari} alt="ipari"/></div>
                                 </div>
-                                </Fade>
-                                <Fade delay={800} left>
                                 <div className="cardContainer">
                                     <div className="card">
-                                        <h1>Tervezés</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
+                                        <Fade bottom>
+                                            <h1>Tervezés</h1>
+                                        </Fade>
+                                        <Fade bottom delay={400}><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p></Fade>
                                     </div>
                                     <div className="cardIllustration"><img src={drawing} alt="tervezes"/></div>
                                 </div>
-                                </Fade>
                             </>             
                          ) : (
                             <>
-                                <Fade left>
                                 <div className="cardContainer">
                                     <div className="cardIllustration"><img src={lakossagi} alt="lakossagi"/></div>
                                     <div className="card">
-                                        <h1>Lakossági villanyszerelés</h1>
-                                        <p>
-                                        • Hibakeresés, hibaelhárítás<br/>
-                                        • Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét<br/>
-                                        • Új lakó ingatlanok villamos hálózatának tervezését<br/>
-                                        • Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését<br/>
-                                        • Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését<br/>
-                                        • Világítás korszerűsítést, design világítás azaz LED technológiára való átállást<br/>
-                                        • Infrafilm és fűtőkábeles elektromos fűtés kivitelezését<br/>
-                                        • Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)<br/>
-                                        • Kapunyitó motorok beüzemelését<br/>
-                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
-                                        </p>
+                                        <Fade bottom>
+                                            <h1>Lakossági villanyszerelés</h1>
+                                        </Fade>
+                                        <Fade bottom delay={400}><p>• Hibakeresés, hibaelhárítás</p><br/></Fade>
+                                        <Fade bottom delay={410}><p>• Meglévő épületek elektromos hálózatának karbantartását, felújítását, lakáselosztó cseréjét</p><br/></Fade>    
+                                        <Fade bottom delay={420}><p>• Új lakó ingatlanok villamos hálózatának tervezését</p><br/></Fade>    
+                                        <Fade bottom delay={430}><p>• Családiházak teljeskörű villamos hálózatának tervezését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={440}><p>• Villamos fogyasztásmérőhely tervezését, mindennemű ügyintézését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={450}><p>• Világítás korszerűsítést, design világítás azaz LED technológiára való átállást</p><br/></Fade>    
+                                        <Fade bottom delay={460}><p>• Infrafilm és fűtőkábeles elektromos fűtés kivitelezését</p><br/></Fade>   
+                                        <Fade bottom delay={470}><p>• Nagy háztartási gépek beüzemelését (elektromos főzőlap, sütő stb.)</p><br/></Fade>   
+                                        <Fade bottom delay={480}><p>• Kapunyitó motorok beüzemelését</p><br/></Fade>   
+                                        <Fade bottom delay={490}><p>• Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)</p><br/></Fade>
                                     </div>
                                 </div>
-                                </Fade>
-                                <Fade delay={400} right>
                                 <div className="cardContainer">
                                     <div className="card">
-                                        <h1>Ipari villanyszerelés</h1>
-                                        <p>
-                                        • Hibakeresés, hibaelhárítás<br/>
-                                        • Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését<br/>
-                                        • Új ipari létesítmények villamos hálózatának tervezését és kivitelezését<br/>
-                                        • Világítás korszerűsítést azaz LED technológiára való átállást<br/>
-                                        • Üzemi gépek beüzemelését<br/>
-                                        • Ipari elosztó szekrényeket<br/>
-                                        • Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)<br/>
-                                        </p>
+                                        <Fade bottom>
+                                            <h1>Ipari villanyszerelés</h1>
+                                        </Fade>
+                                        <Fade bottom delay={400}><p>• Hibakeresés, hibaelhárítás</p><br/></Fade>
+                                        <Fade bottom delay={410}><p>• Meglévő ipari létesítmény elektromos hálózatának karbantartását, korszerűsítését</p><br/></Fade>    
+                                        <Fade bottom delay={420}><p>• Új ipari létesítmények villamos hálózatának tervezését és kivitelezését</p><br/></Fade>    
+                                        <Fade bottom delay={460}><p>• Világítás korszerűsítést azaz LED technológiára való átállást</p><br/></Fade>   
+                                        <Fade bottom delay={470}><p>• Üzemi gépek beüzemelését</p><br/></Fade>   
+                                        <Fade bottom delay={480}><p>• Ipari elosztó szekrényeket</p><br/></Fade>   
+                                        <Fade bottom delay={490}><p>• Mérést és jegyzőkönyvezést (pl.: érintésvédelmi felülvizsgálatot)</p><br/></Fade>
                                     </div>
                                     <div className="cardIllustration"><img src={ipari} alt="ipari"/></div>
                                 </div>
-                                </Fade>
-                                <Fade delay={800} left>
                                 <div className="cardContainer">
                                     <div className="cardIllustration"><img src={drawing} alt="tervezes"/></div>
                                     <div className="card">
@@ -137,7 +128,6 @@ export default function Work() {
                                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas alias, accusamus est libero odit dolorem natus ab, nemo vitae officia reprehenderit dolorum voluptatum, molestiae id hic sapiente aliquid suscipit?</p>
                                     </div>
                                 </div>
-                                </Fade>
                             </>   
                          )
                                
