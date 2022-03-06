@@ -22,7 +22,7 @@ export default function Header({isOpen, setOpen, isScrolled, setScrolled}) {
             document.getElementById("logo").style.left = "100px";
         } else {
             setScrolled(false);
-            document.getElementById("logo").style.top = "-35px";
+            document.getElementById("logo").style.top = "-20px";
             document.getElementById("logo").style.width = "250px";
             document.getElementById("logo").style.height = "250px";
             document.getElementById("logo").style.left = "0px";
