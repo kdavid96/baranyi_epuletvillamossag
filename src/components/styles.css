@@ -69,7 +69,7 @@
 .navbarBrandContainer{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #logo-container{
@@ -616,6 +616,11 @@
     .logo-container-inner{
         position: relative;
     }
+
+    .navbarBrandContainer{
+        padding: 0;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -666,11 +671,6 @@
     }
 
     .logo-hide-under-1000px{
-    }
-
-    .navbarBrandContainer{
-        padding: 0;
-        justify-content: center;
     }
 
     .red{
